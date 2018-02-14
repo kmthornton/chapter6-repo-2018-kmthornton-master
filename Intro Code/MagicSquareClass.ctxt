@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=array
+comment0.target=MagicSquareClass(int[][])
+comment1.params=array
+comment1.target=void\ setMagicSquare(int[][])
+comment2.params=arr
+comment2.target=int\ getMagicNum(int[][])
+comment2.text=\r\n\ Returns\ the\ magic\ number\ as\ an\ int\r\n\ only\ adds\ up\ the\ first\ row\ because\ if\ any\ of\ the\ \r\n\ other\ rows\ or\ collumns\ are\ different\ it\ doesnt\ matter\r\n
+comment3.params=arr
+comment3.target=boolean\ isMagic(int[][])
+comment3.text=\r\n\ checks\ the\ rows,\ columns,\ and\ diagonals\ to\ see\ if\ they\r\n\ are\ equal\r\n
+numComments=4

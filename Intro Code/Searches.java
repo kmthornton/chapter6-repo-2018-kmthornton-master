@@ -11,6 +11,7 @@ public class Searches
    //  a linear search. The index where the element was found is
    //  returned, or -1 if the element is not found.
    //-----------------------------------------------------------------
+   //one reason to use a linear search is if the list is not sorted
    public static int linearSearch (int[] numbers, int key)
    {
       for (int index = 0; index < numbers.length; index++)
@@ -27,10 +28,13 @@ public class Searches
    //-----------------------------------------------------------------
    public static int binarySearch (int[] numbers, int key)
    {
+       //first finds the middle
       int low = 0, high = numbers.length-1, middle = (low + high) / 2;
-
+      
+      //splits it at the middle and finds the middle of the half
       while (numbers[middle] != key && low <= high)
       {
+         //finds the high and low
          if (key < numbers[middle])
             high = middle - 1;
          else

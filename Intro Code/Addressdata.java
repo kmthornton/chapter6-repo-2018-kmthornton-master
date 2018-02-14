@@ -40,7 +40,7 @@ Address Tom   = new Address ("916 Elm Street","Flossmoor", "IL", 60148);
 	  for (Address me: contacts)
 	  {
 	  	System.out.print(me.hash());
-	  	System.out.println("-"+me.hash()%30);
+	  	System.out.println("-"+me.hash()%20);
 	}
 
 
@@ -48,7 +48,7 @@ Address Tom   = new Address ("916 Elm Street","Flossmoor", "IL", 60148);
 
 	  for( int i = 0; i<contacts.length;i++)
 	  {
-		  hash_array[contacts[i].hash()%30] = contacts[i];
+		  hash_array[contacts[i].hash()%32] = contacts[i];
 
 	  }
 
