@@ -22,6 +22,7 @@ public class Coin
    public Coin (char coin)
    {
       type = coin;
+      
       if(type== 'p')
       value=0.01;
       if(type=='n')

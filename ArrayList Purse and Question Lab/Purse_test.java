@@ -8,11 +8,8 @@ public class Purse_test
         Purse purse = new Purse();
         //adds to the purse
         Coin q = new Coin('q');
-        purse.add(q);
-        purse.add(q);
-        purse.add(q);
-        purse.add(q);
-        purse.add(q);
+        purse.add(new Coin('q'));
+        purse.add(new Coin('q'));
         
         Scanner in = new Scanner(System.in);
         int x = 0;
@@ -28,20 +25,18 @@ public class Purse_test
                 
                 String letter = in.nextLine();
                 
-                //creates a new coin
-                Coin newcoin = new Coin('p');
-                if(letter == "p")
+                if(letter.equals("p"))
                     {
-                        purse.add(newcoin);}
+                        purse.add(new Coin('p'));}
                 else if(letter == "n")
-                    {newcoin = new Coin('n');
-                        purse.add(newcoin);}
+                    {
+                        purse.add(new Coin('n'));}
                 else if(letter == "d")
-                    {newcoin = new Coin('d');
-                        purse.add(newcoin);}
+                    {
+                        purse.add(new Coin('d'));}
                 else if(letter == "q")
-                    {newcoin = new Coin('q');
-                        purse.add(newcoin);}
+                    {
+                        purse.add(new Coin('q'));}
             }
             else if(choice.equals("R"))
             {

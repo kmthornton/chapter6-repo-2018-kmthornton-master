@@ -61,6 +61,7 @@ public class Purse
     public int getNumberofPenny()
     {
         int pcount=0;
+        
         for(int i=0; i<pocket.size() ; i++)
         {
             if(pocket.get(i).getType() == 'p')
