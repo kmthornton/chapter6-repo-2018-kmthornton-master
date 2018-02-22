@@ -1,0 +1,147 @@
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+?
+
+ ------------------------------------- 
+
+0 Penny	    .01 
+0 Nickles   .05 
+0 Dimes     .10 
+5 Quarters  .25 
+Total : 1.25
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+R
+
+ ------------------------------------- 
+
+Remove... 
+ p- penny 
+ n- nickle 
+ d- dime 
+ q- quarter
+q
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+
+ ------------------------------------- 
+
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+R
+
+ ------------------------------------- 
+
+Remove... 
+ p- penny 
+ n- nickle 
+ d- dime 
+ q- quarter
+q
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+
+ ------------------------------------- 
+
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+?
+
+ ------------------------------------- 
+
+0 Penny	    .01 
+0 Nickles   .05 
+0 Dimes     .10 
+3 Quarters  .25 
+Total : 0.75
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+A
+
+ ------------------------------------- 
+
+Add... 
+ p- penny 
+ n- nickle 
+ d- dime 
+ q- quarter
+p
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+A
+
+ ------------------------------------- 
+
+Add... 
+ p- penny 
+ n- nickle 
+ d- dime 
+ q- quarter
+n
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+?
+
+ ------------------------------------- 
+
+1 Penny	    .01 
+1 Nickles   .05 
+0 Dimes     .10 
+3 Quarters  .25 
+Total : 0.81
+
+ ------------------------------------- 
+
+ A- Add a Coin 
+ R- Remove a Coin 
+ ?- Display Purse 
+ E- Exit
+E
+
+ ------------------------------------- 
+

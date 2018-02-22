@@ -7,7 +7,9 @@ public class Purse_test
         //ArrayList<Coin> pocket= new ArrayList();
         Purse purse = new Purse();
         //adds to the purse
-        Coin q = new Coin('q');
+        purse.add(new Coin('q'));
+        purse.add(new Coin('q'));
+        purse.add(new Coin('q'));
         purse.add(new Coin('q'));
         purse.add(new Coin('q'));
         
@@ -16,8 +18,10 @@ public class Purse_test
         while(x==0)
         {
             //menu
+            System.out.println("\n ------------------------------------- \n");
             System.out.println(" A- Add a Coin \n R- Remove a Coin \n ?- Display Purse \n E- Exit");
             String choice = in.nextLine();
+            System.out.println("\n ------------------------------------- \n");
             if(choice.equals("A"))
             {
                 //asks what coin they want to add and adds it to the array
@@ -28,13 +32,13 @@ public class Purse_test
                 if(letter.equals("p"))
                     {
                         purse.add(new Coin('p'));}
-                else if(letter == "n")
+                else if(letter.equals("n"))
                     {
                         purse.add(new Coin('n'));}
-                else if(letter == "d")
+                else if(letter.equals("d"))
                     {
                         purse.add(new Coin('d'));}
-                else if(letter == "q")
+                else if(letter.equals("q"))
                     {
                         purse.add(new Coin('q'));}
             }
@@ -42,22 +46,8 @@ public class Purse_test
             {
                 //asks what coin they want to remove and removes it from the array
                 System.out.println("Remove... \n p- penny \n n- nickle \n d- dime \n q- quarter");
-                String rletter = in.nextLine();
-                //char rletter;
-                //rletter = in.next().charAt(0);
-                Coin rcoin = new Coin('p');
-                if(rletter == "p")
-                    purse.remove(rcoin);
-                else if(rletter == "n")
-                {rcoin = new Coin('n');
-                    purse.remove(rcoin);}
-                else if(rletter == "d")
-                {rcoin = new Coin('d');
-                    purse.remove(rcoin);}
-                else if(rletter == "q")
-                {rcoin = new Coin('q');
-                    purse.remove(rcoin);}
-                
+                char rletter = in.next().charAt(0);
+                purse.delete(rletter);
             }
             else if(choice.equals("?"))
             {
@@ -66,10 +56,6 @@ public class Purse_test
             else if(choice.equals("E"))
             {
                 x=1;
-            }
-            else
-            {
-                System.out.println("Incorrect input");
             }
         }
     }

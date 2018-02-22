@@ -14,12 +14,31 @@ public class AccountTest
         Account p8 = new Account ("Eric Willhelm", 3208, 3420.75 , 1);
         Account p9 = new Account ("Megan MulCahey", 4568, 9041.49, 1);
         
-        Account[] people = {p1,p2,p3,p4,p5,p6,p7,p8,p9}; //SORT THIS AND PRINT THIS USING SORTS CLASS
+        Account[] people = {p1,p2,p3,p4,p5,p6,p7,p8,p9};
         
+        //sorts the accounts by their acctnumber
+        Account.insertionSort(people);
+        
+        /*
+        //displays the sorted accounts
+        System.out.println("Sorted accounts");
+         for(int i = 0 ; i<people.length; i++)
+        {
+            System.out.println(people[i]);
+        }
+        */
+       
         //prints the accounts with a new hash code as their account number
+        
+        System.out.println("\n New hash nums");
         for(int i = 0 ; i<people.length; i++)
         {
             people[i].hash_code();
+        }
+        //sorted hashnums
+        Account.insertionSort(people);
+        for(int i = 0 ; i<people.length; i++)
+        {
             System.out.println(people[i]);
         }
         
@@ -38,6 +57,7 @@ public class AccountTest
         }
         
         //prints out the hashTable
+        System.out.println("\n Hash table");
         for(int w = 0; w < hashTable.length; w++){
             System.out.println(hashTable[w][0]);
             System.out.println(hashTable[w][1]);

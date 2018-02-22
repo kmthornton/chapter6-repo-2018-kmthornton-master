@@ -35,9 +35,22 @@ public class Purse
     /**(
      * removes a coin
      */
-    public void remove(Coin acoin)
+    public void delete(char type)
     {
-        pocket.remove(acoin);
+        //tells user that there is none of that coin 
+        //and cuts out of loop so only one coin is deleted
+        int flag = 0;
+        for( int i = 0; i<pocket.size() ; i++)
+        {
+            if(pocket.get(i).getType() == type && flag == 0)
+            {
+                pocket.remove(i);
+                flag = 1;
+            }
+            
+        }
+        if (flag==0)
+        System.out.println("That type of coin is not in the purse");
     }
   
     /**

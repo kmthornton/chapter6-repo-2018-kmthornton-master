@@ -176,13 +176,46 @@ public class Account implements Comparable
         hash_num += acctNumber + type + name.charAt(0) + name.charAt(1);
         
         //adjusts hash number to be 8 digits
-        hash_num = (hash_num % 2000000000) * 172954;
+        hash_num = (hash_num % 2000000000) * 272955;
         hash_num = hash_num % 100000000;
         
 
 
         acctNumber = hash_num;
     }
+    
+        /**
+     * Compares two objects priorities
+     * Returns a positive if its greater than 
+     * Negative if less than
+     * Zero if equal
+     */
+    public double compareTo(Account obj)
+    {
+        return this.acctNumber - obj.acctNumber;
+    }
+    
+    /**
+   *  Sorts the specified array of objects using the insertion
+   *  sort algorithm.
+   */
+   public static void insertionSort (Account[] objects)
+   {
+      for (int index = 1; index < objects.length; index++)
+      {
+         Account key = objects[index];
+         int position = index;
+
+         // shift larger values to the right
+         while (position > 0 && objects[position-1].compareTo(key) > 0)
+         {
+            objects[position] = objects[position-1];
+            position--;
+         }
+
+         objects[position] = key;
+      }
+   }
 
 
 
